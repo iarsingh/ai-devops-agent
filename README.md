@@ -1,5 +1,12 @@
 # AI DevOps Agent
 
+## Overview
+
+A DevOps agent exercise that calls its tools in a fixed order: pipeline first, then plan. Requests go through `POST /agent/run`, and any request to apply changes to production is refused. A `/v1` ops API adds workspaces, tenant isolation, job approval and audit records, with tests for both the agent and the ops API.
+
+- **Built with:** Python, pytest, Docker, Docker Compose, GitHub Actions
+- **Scope:** Local laptop proof with tests; it calls no hosted model and applies no production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
